@@ -6,7 +6,6 @@ public class Main {
         BookStore store = new BookStore();
         List<User> users = new ArrayList<>();
 
-        // Sample books
         store.addBook("Java Basics", "James Gosling", 499.0, 5);
         store.addBook("Effective Java", "Joshua Bloch", 899.0, 3);
 
@@ -26,7 +25,7 @@ public class Main {
             System.out.println("0. Exit");
             System.out.print("Enter choice: ");
             int choice = sc.nextInt();
-            sc.nextLine(); // consume newline
+            sc.nextLine();
 
             switch (choice) {
                 case 1 -> store.viewBooks();
@@ -72,3 +71,4 @@ public class Main {
         }
     }
 }
+
